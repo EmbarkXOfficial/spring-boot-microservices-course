@@ -1,4 +1,7 @@
 package com.embarkx.firstjobapp.company;
 
-public class CompanyService {
+import java.util.List;
+
+public interface CompanyService {
+    List<Company> getAllCompanies();
 }
