@@ -1,6 +1,6 @@
 package com.embarkx.companyms.company;
 
-import com.embarkx.companyms.dto.ReviewMessage;
+import com.embarkx.companyms.company.dto.ReviewMessage;
 
 import java.util.List;
 

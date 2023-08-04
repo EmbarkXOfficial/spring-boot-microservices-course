@@ -1,4 +1,4 @@
-package com.embarkx.companyms.messaging;
+package com.embarkx.companyms.company.messaging;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

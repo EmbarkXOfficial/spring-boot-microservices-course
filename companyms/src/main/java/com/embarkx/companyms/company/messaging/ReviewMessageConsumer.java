@@ -1,9 +1,11 @@
-package com.embarkx.companyms.messaging;
+package com.embarkx.companyms.company.messaging;
 
 import com.embarkx.companyms.company.CompanyService;
-import com.embarkx.companyms.dto.ReviewMessage;
+import com.embarkx.companyms.company.dto.ReviewMessage;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReviewMessageConsumer {
     private final CompanyService companyService;
 
