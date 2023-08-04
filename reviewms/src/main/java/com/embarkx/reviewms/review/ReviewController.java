@@ -70,4 +70,11 @@ public class ReviewController {
             return new ResponseEntity<>("Review not deleted",
                     HttpStatus.NOT_FOUND);
     }
+
+    @GetMapping("/averageRating")
+    public Double getAverageReview(@RequestParam Long companyId){
+        List<Review> reviewList = reviewService.getAllReviews(companyId);
+        return reviewList.stream().mapToDouble(Review::getRating).average()
+                .orElse(0.0);
+    }
 }
