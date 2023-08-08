@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: company
+spec:
+  selector:
+    app: company
+  ports:
+    - port: 80
+      targetPort: 8081
+  type: LoadBalancer
